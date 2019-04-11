@@ -1,13 +1,19 @@
-# react-bootstrap-daterangepicker
+# react-bootstrap-monthrangepicker
 
-[![NPM version](https://badge.fury.io/js/react-bootstrap-daterangepicker.svg)](http://badge.fury.io/js/react-bootstrap-daterangepicker)
-[![Build Status](https://travis-ci.org/skratchdot/react-bootstrap-daterangepicker.svg?branch=master)](https://travis-ci.org/skratchdot/react-bootstrap-daterangepicker)
-[![Code Climate](https://codeclimate.com/github/skratchdot/react-bootstrap-daterangepicker.png)](https://codeclimate.com/github/skratchdot/react-bootstrap-daterangepicker)
-[![Coverage Status](https://coveralls.io/repos/skratchdot/react-bootstrap-daterangepicker/badge.svg?branch=master&service=github)](https://coveralls.io/github/skratchdot/react-bootstrap-daterangepicker?branch=master)
-[![Dependency Status](https://david-dm.org/skratchdot/react-bootstrap-daterangepicker.svg)](https://david-dm.org/skratchdot/react-bootstrap-daterangepicker)
-[![devDependency Status](https://david-dm.org/skratchdot/react-bootstrap-daterangepicker/dev-status.svg)](https://david-dm.org/skratchdot/react-bootstrap-daterangepicker#info=devDependencies)
+和原版基本一致，去掉time和日期的选择，增加一个参数：
 
-[![NPM](https://nodei.co/npm/react-bootstrap-daterangepicker.png)](https://npmjs.org/package/react-bootstrap-daterangepicker)
+### monthOrQuarter:number类型
+
+### 0 代表月份范围选择（默认）
+
+### 1 代表季度范围选择
+
+### 季度范围选择截图
+![Improvely.com](http://t.w2wz.cn/t6/700/1554970814x2099769202.png)
+
+### 月份范围选择截图
+![Improvely.com](http://t.w2wz.cn/t6/700/1554970876x1822611365.png)
+
 
 ## Description
 
@@ -34,7 +40,7 @@ an existing jQuery/bootstrap library (it is not a pure react port):
 
 ```javascript
 import React, { Component } from 'react';
-import DateRangePicker from 'react-bootstrap-daterangepicker';
+import Monthrangepicker from 'react-bootstrap-monthrangepicker';
 // you will need the css that comes with bootstrap@3. if you are using
 // a tool like webpack, you can do the following:
 import 'bootstrap/dist/css/bootstrap.css';
@@ -44,9 +50,9 @@ import 'bootstrap-daterangepicker/daterangepicker.css';
 class MyComponent {
   render() {
     return (
-      <DateRangePicker startDate="1/1/2014" endDate="3/1/2014">
+      <Monthrangepicker startDate="1/1/2014" endDate="3/1/2014" monthOrQuarter={0}>
         <button>Click Me To Open Picker!</button>
-      </DateRangePicker>
+      </Monthrangepicker>
     );
   }
 }
@@ -86,7 +92,7 @@ class SomeReactComponent extends React.Component {
     console.log(picker.startDate);
   }
   render() {
-    return <DateRangePicker onEvent={this.handleEvent} />;
+    return <Monthrangepicker onEvent={this.handleEvent} />;
   }
 }
 ```
@@ -113,9 +119,6 @@ Release notes can be found in the
 
 ## Links
 
-* [Source Code](https://github.com/skratchdot/react-bootstrap-daterangepicker)
-* [Changelog](https://github.com/skratchdot/react-bootstrap-daterangepicker/blob/master/CHANGELOG.md)
-* [Live Demo](http://projects.skratchdot.com/react-bootstrap-daterangepicker/)
 * [Original Plugin](https://github.com/dangrossman/bootstrap-daterangepicker)
 
 ## License

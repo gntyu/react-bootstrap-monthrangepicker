@@ -1,32 +1,30 @@
 {
   "_args": [
     [
-      "react-bootstrap-daterangepicker@4.1.0",
-      "/Users/luyan1/kpi-dashboard-ui"
+      "react-bootstrap-monthrangepicker@1.0.0"
     ]
   ],
-  "_from": "react-bootstrap-daterangepicker@4.1.0",
-  "_id": "react-bootstrap-daterangepicker@4.1.0",
+  "_from": "react-bootstrap-monthrangepicker@1.0.0",
+  "_id": "react-bootstrap-monthrangepicker@1.0.0",
   "_inBundle": false,
   "_integrity": "sha1-cTPpqVmkLhi0mgrqUKSMMbiKp9g=",
-  "_location": "/react-bootstrap-daterangepicker",
+  "_location": "/react-bootstrap-monthrangepicker",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "react-bootstrap-daterangepicker@4.1.0",
-    "name": "react-bootstrap-daterangepicker",
-    "escapedName": "react-bootstrap-daterangepicker",
-    "rawSpec": "4.1.0",
+    "raw": "react-bootstrap-monthrangepicker@1.0.0",
+    "name": "react-bootstrap-monthrangepicker",
+    "escapedName": "react-bootstrap-monthrangepicker",
+    "rawSpec": "1.0.0",
     "saveSpec": null,
-    "fetchSpec": "4.1.0"
+    "fetchSpec": "1.0.0"
   },
   "_requiredBy": [
     "/"
   ],
   "_resolved": "http://registry.npm.taobao.org/react-bootstrap-daterangepicker/download/react-bootstrap-daterangepicker-4.1.0.tgz",
-  "_spec": "4.1.0",
-  "_where": "/Users/luyan1/kpi-dashboard-ui",
+  "_spec": "1.0.0",
   "author": {
     "name": "skratchdot"
   },
@@ -47,7 +45,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^3",
-    "bootstrap-daterangepicker": "^2.1.30",
+    "bootstrap-monthrangepicker": "^1.1.0",
     "cheerio": "^0.22.0",
     "coveralls": "^3.0.0",
     "enzyme": "^3.3.0",
@@ -72,12 +70,13 @@
   "files": [
     "dist/"
   ],
-  "homepage": "https://github.com/skratchdot/react-bootstrap-daterangepicker/",
+  "homepage": "https://github.com/gntyu/react-bootstrap-monthrangepicker/",
   "keywords": [
     "react",
     "react-component",
     "bootstrap",
-    "date",
+    "month",
+    "quarter",
     "range",
     "picker",
     "selector",
@@ -86,9 +85,9 @@
   ],
   "license": "Apache-2.0",
   "main": "./dist/bundle.js",
-  "name": "react-bootstrap-daterangepicker",
+  "name": "react-bootstrap-monthrangepicker",
   "peerDependencies": {
-    "bootstrap-daterangepicker": "*",
+    "bootstrap-monthrangepicker": "*",
     "jquery": "*",
     "moment": "*",
     "prop-types": "*",
@@ -96,7 +95,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/skratchdot/react-bootstrap-daterangepicker.git"
+    "url": "https://github.com/gntyu/react-bootstrap-monthrangepicker"
   },
   "scripts": {
     "build": "npm-run-all clean build:options format cover build:lib build:storybook",
@@ -113,5 +112,5 @@
     "watch": "npm-run-all --parallel watch:cover storybook",
     "watch:cover": "npm run cover -- --watch"
   },
-  "version": "4.1.0"
+  "version": "1.0.0"
 }
