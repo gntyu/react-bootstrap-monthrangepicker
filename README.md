@@ -1,18 +1,18 @@
 # react-bootstrap-monthrangepicker
 
-和原版基本一致，去掉time和日期的选择，增加一个参数：
+Edit from [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-bootstrap-daterangepicker)
+Add one parameter : monthOrQuarter [0:monthRangePicker(default);1:quarterRangePicker];
 
-### monthOrQuarter:number类型
+Delete date and time picker,if you want to use daterangepicker,you can see the [origin](https://github.com/skratchdot/react-bootstrap-daterangepicker);
 
-### 0 代表月份范围选择（默认）
+If your project is not React ,you can see the [bootstrap-monthrangepicker](https://github.com/gntyu/bootstrap-monthrangepicker);
 
-### 1 代表季度范围选择
 
-### 季度范围选择截图
-![Improvely.com](http://t.w2wz.cn/t6/700/1554970814x2099769202.png)
+### quarterRangePicker
+![Improvely.com](http://t.w2wz.cn/t6/700/1555042058x2099769202.png)
 
-### 月份范围选择截图
-![Improvely.com](http://t.w2wz.cn/t6/700/1554970876x1822611365.png)
+### monthRangePicker
+![Improvely.com](http://t.w2wz.cn/t6/700/1555042082x2728278728.png)
 
 
 ## Description
@@ -47,10 +47,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 // you will also need the css that comes with bootstrap-daterangepicker
 import 'bootstrap-monthrangepicker/daterangepicker.css';
 
+//monthOrQuarter:0 monthRangePicker(default);1 quarterRangePicker
 class MyComponent {
   render() {
     return (
-      <Monthrangepicker startDate="1/1/2014" endDate="3/1/2014" monthOrQuarter={0}>
+      <Monthrangepicker startDate="1/1/2014" endDate="3/1/2014" monthOrQuarter={1}>
         <button>Click Me To Open Picker!</button>
       </Monthrangepicker>
     );
@@ -61,6 +62,7 @@ class MyComponent {
 ## Documentation
 
 For in depth documentation, see the original
+[bootstrap-monthrangepicker](https://github.com/gntyu/bootstrap-monthrangepicker) project page.
 [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker) project page.
 
 You can pass all the same props as the original plugin:
@@ -116,6 +118,7 @@ The 2 props you can pass to modify this behavior are:
 
 ## Links
 
+* [Original Plugin](https://github.com/gntyu/bootstrap-monthrangepicker)
 * [Original Plugin](https://github.com/dangrossman/bootstrap-daterangepicker)
 
 ## License
