@@ -26,7 +26,7 @@ If your project is not React ,you can see the [bootstrap-monthrangepicker](https
 A month/quarter picker for react (using bootstrap). This is a react wrapper around
 an existing jQuery/bootstrap library (it is not a pure react port):
 
-[bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker)
+[bootstrap-monthrangepicker](https://github.com/gntyu/bootstrap-monthrangepicker)
 
 ## Getting Started
 
@@ -56,8 +56,20 @@ import 'bootstrap-monthrangepicker/daterangepicker.css';
 //monthOrQuarter:0 monthRangePicker(default);1 quarterRangePicker
 class MyComponent {
   render() {
+      var Locale ={
+        format: 'YYYY/MM',
+        separator: ' - ',
+        applyLabel: '确定',
+        cancelLabel: '取消',
+        fromLabel: '从',
+        toLabel: '至',
+        customRangeLabel: '自定义',
+        monthNames: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
+        quarterNames: ['一季度', '二季度', '三季度', '四季度'],
+        firstDay: 1
+    };
     return (
-      <Monthrangepicker startDate="1/1/2014" endDate="3/1/2014" monthOrQuarter={1}>
+      <Monthrangepicker locale={Locale} startDate="1/1/2014" endDate="3/1/2014" monthOrQuarter={1}>
         <button>Click Me To Open Picker!</button>
       </Monthrangepicker>
     );
@@ -122,8 +134,9 @@ The 2 props you can pass to modify this behavior are:
 
 ## Links
 
-* [Original Plugin](https://github.com/gntyu/bootstrap-monthrangepicker)
-* [Original Plugin](https://github.com/dangrossman/bootstrap-daterangepicker)
+* [Original bootstrap-monthrangepicker Plugin](https://github.com/gntyu/bootstrap-monthrangepicker)
+* [Original react-bootstrap-daterangepicker Plugin](https://github.com/skratchdot/react-bootstrap-daterangepicker)
+* [Original bootstrap-daterangepicker Plugin](https://github.com/dangrossman/bootstrap-daterangepicker)
 
 ## License
 
