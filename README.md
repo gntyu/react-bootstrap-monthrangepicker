@@ -1,23 +1,29 @@
 # react-bootstrap-monthrangepicker
 
-Edit from [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-bootstrap-daterangepicker)
-Add one parameter : monthOrQuarter [0:monthRangePicker(default);1:quarterRangePicker];
+Edit from [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-bootstrap-daterangepicker);
 
-Delete date and time picker,if you want to use daterangepicker,you can see the [origin](https://github.com/skratchdot/react-bootstrap-daterangepicker);
+Add one parameter : monthOrQuarter[number]
+0:monthRangePicker(default)
+1:quarterRangePicker
+
+Delete showWeekNumbers,date and time picker,if you want to use daterangepicker,you can see the [origin](https://github.com/skratchdot/react-bootstrap-daterangepicker);
 
 If your project is not React ,you can see the [bootstrap-monthrangepicker](https://github.com/gntyu/bootstrap-monthrangepicker);
 
-
-### quarterRangePicker
+```javascript
+  monthOrQuarter:1
+```
 ![Improvely.com](http://t.w2wz.cn/t6/700/1555042058x2099769202.png)
 
-### monthRangePicker
+```javascript
+  monthOrQuarter:0
+```
 ![Improvely.com](http://t.w2wz.cn/t6/700/1555042082x2728278728.png)
 
 
 ## Description
 
-A date/time picker for react (using bootstrap). This is a react wrapper around
+A month/quarter picker for react (using bootstrap). This is a react wrapper around
 an existing jQuery/bootstrap library (it is not a pure react port):
 
 [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker)
@@ -25,16 +31,16 @@ an existing jQuery/bootstrap library (it is not a pure react port):
 ## Getting Started
 
 1. Install the needed peer dependencies:
-   `npm install --save bootstrap-daterangepicker react jquery moment prop-types`
+   `npm install --save bootstrap-monthrangepicker react jquery moment prop-types`
 
 2. Install the module with:
-   `npm install --save react-bootstrap-daterangepicker`
+   `npm install --save react-bootstrap-monthrangepicker`
 
 3. Include the bootstrap@3 css and fonts in your project.
    (aka `import 'bootstrap/dist/css/bootstrap.css';`)
 
-4. Include the bootstrap-daterangepicker css in your project.
-   (aka `import 'bootstrap-daterangepicker/daterangepicker.css';`)
+4. Include the bootstrap-monthrangepicker css in your project.
+   (aka `import 'bootstrap-monthrangepicker/daterangepicker.css';`)
 
 5. This is a commonjs library. You will need a tool like browserify/webpack/etc to build your code.
 
@@ -70,9 +76,7 @@ You can pass all the same props as the original plugin:
 * **&lt;input&gt;, alwaysShowCalendars, applyClass, autoApply, autoUpdateInput,
   buttonClasses, cancelClass, dateLimit, drops, endDate, isCustomDate,
   isInvalidDate, linkedCalendars, locale, maxDate, minDate, opens, parentEl,
-  ranges, showCustomRangeLabel, showDropdowns, showISOWeekNumbers,
-  showWeekNumbers, singleDatePicker, startDate, template, timePicker,
-  timePicker24Hour, timePickerIncrement, timePickerSeconds**
+  ranges, showCustomRangeLabel, showDropdowns, showISOWeekNumbers, singleDatePicker, startDate, template,monthOrQuarter**
 
 You can listen to the following 7 events:
 
@@ -101,7 +105,7 @@ class SomeReactComponent extends React.Component {
 
 There are 2 additional props you can pass, that are not part of the wrapped
 [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker) project.
-Every `<DateRangePicker />` element emits a div element for the wrapper project to initialize itself against.
+Every `<Monthrangepicker />` element emits a div element for the wrapper project to initialize itself against.
 
 The emitted div looks like this by default:
 
