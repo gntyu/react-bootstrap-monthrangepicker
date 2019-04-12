@@ -9,6 +9,9 @@ Delete showWeekNumbers,date and time picker,if you want to use daterangepicker,y
 
 If your project is not React ,you can see the [bootstrap-monthrangepicker](https://github.com/gntyu/bootstrap-monthrangepicker);
 
+
+## Screenshots
+
 ```javascript
   monthOrQuarter:1
 ```
