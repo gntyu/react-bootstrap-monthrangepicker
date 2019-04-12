@@ -140,5 +140,5 @@ The 2 props you can pass to modify this behavior are:
 
 ## License
 
-Copyright (c) 2014 skratchdot  
+Copyright (c) 2019 gntyu 
 Uses the original [bootstrap-daterangepicker](https://github.com/dangrossman/bootstrap-daterangepicker) license.
