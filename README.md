@@ -1,4 +1,4 @@
-# react-bootstrap-monthrangepicker
+# # React Month & Quater Range Picker for Bootstrap
 
 Edit from [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-bootstrap-daterangepicker);
 
