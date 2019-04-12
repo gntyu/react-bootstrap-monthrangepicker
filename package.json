@@ -83,7 +83,6 @@
     "datetime",
     "ui"
   ],
-  "license": "Apache-2.0",
   "main": "./dist/bundle.js",
   "name": "react-bootstrap-monthrangepicker",
   "peerDependencies": {

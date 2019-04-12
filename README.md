@@ -45,7 +45,7 @@ import Monthrangepicker from 'react-bootstrap-monthrangepicker';
 // a tool like webpack, you can do the following:
 import 'bootstrap/dist/css/bootstrap.css';
 // you will also need the css that comes with bootstrap-daterangepicker
-import 'bootstrap-daterangepicker/daterangepicker.css';
+import 'bootstrap-monthrangepicker/daterangepicker.css';
 
 class MyComponent {
   render() {
@@ -112,10 +112,7 @@ The 2 props you can pass to modify this behavior are:
 * **containerStyles [object]**: the styles of the container `<div />` (default: `{ display: 'inline-block' }`)
 * **containerClass [string]**: the class of the container `<div />` (default: `'react-bootstrap-daterangepicker-container'`)
 
-## Release Notes
 
-Release notes can be found in the
-[Changelog](https://github.com/skratchdot/react-bootstrap-daterangepicker/blob/master/CHANGELOG.md).
 
 ## Links
 
