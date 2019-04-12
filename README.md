@@ -2,9 +2,8 @@
 
 Edit from [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-bootstrap-daterangepicker);
 
-Add one parameter : monthOrQuarter[number]  
-0:monthRangePicker(default)  
-1:quarterRangePicker  
+Add one parameter :  
+* **monthOrQuarter**:[number]0 for monthRangePicker(default) ,1 for quarterRangePicker  
 
 Delete showWeekNumbers,date and time picker,if you want to use daterangepicker,you can see the [origin](https://github.com/skratchdot/react-bootstrap-daterangepicker);
 
