@@ -5,9 +5,9 @@ Edit from [react-bootstrap-daterangepicker](https://github.com/skratchdot/react-
 Add one parameter :  
 * **monthOrQuarter**:[number]0 for monthRangePicker(default) ,1 for quarterRangePicker  
 
-Delete showWeekNumbers,date and time picker,if you want to use daterangepicker,you can see the [origin](https://github.com/skratchdot/react-bootstrap-daterangepicker);
+Delete showWeekNumbers,date and time picker , if you want to use daterangepicker, you can see the package [react-bootstrap-daterangepicker](https://www.npmjs.com/package/react-bootstrap-daterangepicker);
 
-If your project is not React ,you can see the [bootstrap-monthrangepicker](https://github.com/gntyu/bootstrap-monthrangepicker);
+If your project is not React , you can see the package [bootstrap-monthrangepicker](https://www.npmjs.com/package/bootstrap-monthrangepicker);
 
 
 ## Screenshots
@@ -136,9 +136,9 @@ The 2 props you can pass to modify this behavior are:
 
 ## Links
 
-* [Original bootstrap-monthrangepicker Plugin](https://github.com/gntyu/bootstrap-monthrangepicker)
-* [Original react-bootstrap-daterangepicker Plugin](https://github.com/skratchdot/react-bootstrap-daterangepicker)
-* [Original bootstrap-daterangepicker Plugin](https://github.com/dangrossman/bootstrap-daterangepicker)
+* github : [Original bootstrap-monthrangepicker Plugin](https://github.com/gntyu/bootstrap-monthrangepicker)
+* github : [Original react-bootstrap-daterangepicker Plugin](https://github.com/skratchdot/react-bootstrap-daterangepicker)
+* github : [Original bootstrap-daterangepicker Plugin](https://github.com/dangrossman/bootstrap-daterangepicker)
 
 ## License
 
